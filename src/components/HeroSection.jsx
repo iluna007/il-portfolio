@@ -27,9 +27,15 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <button
+              onClick={() => {
+                const el = document.getElementById("projects");
+                el?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="cosmic-button"
+            >
               View My Work
-            </a>
+            </button>
           </div>
         </div>
       </div>

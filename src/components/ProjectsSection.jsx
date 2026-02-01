@@ -3,32 +3,32 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Sounding-ice",
+    description: "A research-driven web platform for browsing and organizing field recordings through thematic categories, designed to support public access, education, and environmental research.",
+    image: "public/soundingice1.jpg",
+    tags: ["HTML", "SCSS", "JavaScript","React","Vite", "Leaflet", "Netlify","Mapbox"],
+    demoUrl: "https://sounding-ice.ca/",
+    githubUrl: "https://github.com/iluna007/soundingice",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Berta Cáceres — Spatial-Temporal Platform",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "An interactive cartographic platform that visualizes and cross-references thousands of events over time and territory, enabling pattern analysis within a human-rights investigation.",
+    image: "public/berta1.jpg",
+    tags: ["HTML", "SCSS", "JavaScript","React","Vite", "Leaflet", "Netlify","Mapbox"],
+    demoUrl: "https://bertacaceres.re-presentare.org/",
+    githubUrl: "https://github.com/iluna007/berta",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Finnja Willner — Artist Portfolio",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A lightweight, responsive portfolio website translating an audiovisual artistic practice into clear information architecture, page rhythm, and a focused user experience.",
+    image: "public/finnja1.jpg",
+    tags: ["HTML", "SCSS", "JavaScript","React","Vite","Netlify"],
+    demoUrl: "https://finnjawillner.de/",
+    githubUrl: "https://github.com/iluna007/Portfolio_06_Finnjaweb",
   },
 ];
 
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/iluna007"
           >
             Check My Github <ArrowRight size={16} />
           </a>
