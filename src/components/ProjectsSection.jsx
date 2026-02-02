@@ -62,13 +62,23 @@ const projects = [
   },
   {
     id: 7,
-    title: "Practice Project 3",
+    title: "Practice Project 4",
     description:
       "An interactive 3D scroll animation built with Three.js, featuring real-time color customization, scroll-triggered object rotation, and parallax camera movement. Includes a GUI for material color changes and uses GSAP for smooth animations.",
     image: "/pp4.jpg",
     tags: ["HTML", "SCSS", "JavaScript","React","Vite","Three.js","Netlify"],
     demoUrl: "https://portfoliotest10.netlify.app/",
     githubUrl: "https://github.com/iluna007/Portfolio_05_Threejs_journey_04_LandPage_Portfolio",
+  },
+  {
+    id: 8,
+    title: "Practice Project 5",
+    description:
+      "This project set up with React, TypeScript, and Vite, designed for managing patient tracking in a veterinary context. It provides a basic interface to add, view, and update patient records, utilizing modern development practices, including ESLint for code quality and Vite for fast development refreshes.",
+    image: "/pp5.jpg",
+    tags: ["HTML", "Tailwind CSS", "JavaScript","React","Vite","TypeScript","Netlify"],
+    demoUrl: "https://patientstest.netlify.app/",
+    githubUrl: "https://github.com/iluna007/Portfolio_09_Patients",
   },
 ];
 
