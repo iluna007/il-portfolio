@@ -40,6 +40,16 @@ const projects = [
     demoUrl: "https://whimsical-douhua-15aec6.netlify.app/",
     githubUrl: "https://github.com/iluna007/Portfolio_01_Shoping_cart",
   },
+  {
+    id: 5,
+    title: "Practice Project 2",
+    description:
+      "A dynamic 3D galaxy generator built with Three.js, allowing real-time customization of galaxy parameters such as size, branches, randomness, and colors through an interactive GUI. The project includes optional spin animation and smooth camera controls via OrbitControls. This repository is a learning project from the Three.js Journey.",
+    image: "/pp2.jpg",
+    tags: ["HTML", "SCSS", "JavaScript","React","Vite","Three.js","Netlify"],
+    demoUrl: "https://galaxytest00.netlify.app/",
+    githubUrl: "https://github.com/iluna007/Portfolio_05_Threejs_journey_03_Galaxy",
+  },
 ];
 
 export const ProjectsSection = () => {
