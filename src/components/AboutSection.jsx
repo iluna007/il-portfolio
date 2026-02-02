@@ -37,7 +37,7 @@ export const AboutSection = () => {
           >
             {/* Imagen (reinsertada) */}
             <motion.img
-              src="/il-portfolio/iker-luna.jpeg"
+              src="/iker-luna.jpeg"
               alt="Iker Luna"
               style={{ y: imageY }}
               className="w-full max-w-sm mx-auto rounded-lg object-cover"
@@ -108,7 +108,7 @@ export const AboutSection = () => {
               </button>
 
               <a
-                href="/il-portfolio/IL_Resume.pdf"
+                href="/IL_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
