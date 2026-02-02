@@ -37,7 +37,7 @@ const projects = [
       "A shopping cart web app built using React and Vite, showcasing product listing and cart management with a dynamic user interface. This project is part of a series of smaller projects aimed at demonstrating my skills and practices as a web developer.",
     image: "public/pp1.jpg",
     tags: ["HTML", "SCSS", "JavaScript","React","Vite","Netlify"],
-    demoUrl: "https://iluna007.github.io/Portfolio_01_Shoping_cart/",
+    demoUrl: "https://whimsical-douhua-15aec6.netlify.app/",
     githubUrl: "https://github.com/iluna007/Portfolio_01_Shoping_cart",
   },
 ];
