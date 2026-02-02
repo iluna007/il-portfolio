@@ -30,6 +30,16 @@ const projects = [
     demoUrl: "https://finnjawillner.de/",
     githubUrl: "https://github.com/iluna007/Portfolio_06_Finnjaweb",
   },
+  {
+    id: 4,
+    title: "Practice Project 1",
+    description:
+      "A shopping cart web app built using React and Vite, showcasing product listing and cart management with a dynamic user interface. This project is part of a series of smaller projects aimed at demonstrating my skills and practices as a web developer.",
+    image: "public/pp1.jpg",
+    tags: ["HTML", "SCSS", "JavaScript","React","Vite","Netlify"],
+    demoUrl: "https://iluna007.github.io/Portfolio_01_Shoping_cart/",
+    githubUrl: "https://github.com/iluna007/Portfolio_01_Shoping_cart",
+  },
 ];
 
 export const ProjectsSection = () => {
