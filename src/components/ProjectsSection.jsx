@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Sounding-ice",
     description: "A research-driven web platform for browsing and organizing field recordings through thematic categories, designed to support public access, education, and environmental research.",
-    image: "/soundingice1.jpg",
+    image: "public/soundingice1.jpg",
     tags: ["HTML", "SCSS", "JavaScript","React","Vite", "Leaflet", "Netlify","Mapbox"],
     demoUrl: "https://sounding-ice.ca/",
     githubUrl: "https://github.com/iluna007/soundingice",
@@ -15,7 +15,7 @@ const projects = [
     title: "Berta Cáceres — Spatial-Temporal Platform",
     description:
       "An interactive cartographic platform that visualizes and cross-references thousands of events over time and territory, enabling pattern analysis within a human-rights investigation.",
-    image: "/berta1.jpg",
+    image: "public/berta1.jpg",
     tags: ["HTML", "SCSS", "JavaScript","React","Vite", "Leaflet", "Netlify","Mapbox"],
     demoUrl: "https://bertacaceres.re-presentare.org/",
     githubUrl: "https://github.com/iluna007/berta",
@@ -25,7 +25,7 @@ const projects = [
     title: "Finnja Willner — Artist Portfolio",
     description:
       "A lightweight, responsive portfolio website translating an audiovisual artistic practice into clear information architecture, page rhythm, and a focused user experience.",
-    image: "/finnja1.jpg",
+    image: "public/finnja1.jpg",
     tags: ["HTML", "SCSS", "JavaScript","React","Vite","Netlify"],
     demoUrl: "https://finnjawillner.de/",
     githubUrl: "https://github.com/iluna007/Portfolio_06_Finnjaweb",
@@ -35,7 +35,7 @@ const projects = [
     title: "Practice Project 1",
     description:
       "A shopping cart web app built using React and Vite, showcasing product listing and cart management with a dynamic user interface. This project is part of a series of smaller projects aimed at demonstrating my skills and practices as a web developer.",
-    image: "/pp1.jpg",
+    image: "public/pp1.jpg",
     tags: ["HTML", "SCSS", "JavaScript","React","Vite","Netlify"],
     demoUrl: "https://whimsical-douhua-15aec6.netlify.app/",
     githubUrl: "https://github.com/iluna007/Portfolio_01_Shoping_cart",
