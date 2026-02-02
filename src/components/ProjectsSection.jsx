@@ -50,6 +50,16 @@ const projects = [
     demoUrl: "https://galaxytest00.netlify.app/",
     githubUrl: "https://github.com/iluna007/Portfolio_05_Threejs_journey_03_Galaxy",
   },
+  {
+    id: 6,
+    title: "Practice Project 3",
+    description:
+      "This project is a Tip Calculator web application built with React and Vite. It enables users to calculate tips and consumption totals, providing an intuitive and responsive user experience. The project demonstrates core React concepts like state management, form validation, and API handling.",
+    image: "/pp3.jpg",
+    tags: ["HTML", "Tailwind CSS", "JavaScript","React","Vite","TypeScript","Netlify"],
+    demoUrl: "https://ornate-profiterole-7336df.netlify.app/",
+    githubUrl: "https://github.com/iluna007/Portfolio_02_Tips",
+  },
 ];
 
 export const ProjectsSection = () => {
