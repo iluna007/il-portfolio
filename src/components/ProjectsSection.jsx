@@ -60,6 +60,16 @@ const projects = [
     demoUrl: "https://ornate-profiterole-7336df.netlify.app/",
     githubUrl: "https://github.com/iluna007/Portfolio_02_Tips",
   },
+  {
+    id: 7,
+    title: "Practice Project 3",
+    description:
+      "An interactive 3D scroll animation built with Three.js, featuring real-time color customization, scroll-triggered object rotation, and parallax camera movement. Includes a GUI for material color changes and uses GSAP for smooth animations.",
+    image: "/pp4.jpg",
+    tags: ["HTML", "SCSS", "JavaScript","React","Vite","Three.js","Netlify"],
+    demoUrl: "https://portfoliotest10.netlify.app/",
+    githubUrl: "https://github.com/iluna007/Portfolio_05_Threejs_journey_04_LandPage_Portfolio",
+  },
 ];
 
 export const ProjectsSection = () => {
