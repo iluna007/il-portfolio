@@ -95,7 +95,7 @@ const projects = [
     title: "Memorias vivas",
     description:
       "Under Construction",
-    image: "/investigacionurgent.jpg",
+    image: "/memoriasvivas.jpg",
     tags: ["HTML", "Tailwind CSS", "JavaScript","React","Vite","Bootstrap","Netlify"],
     demoUrl: "https://memoriasvivastest.netlify.app/",
     githubUrl: "https://github.com/iluna007/memoriasvivas",
