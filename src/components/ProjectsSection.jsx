@@ -90,6 +90,16 @@ const projects = [
     demoUrl: "https://investigacionurgente.netlify.app/",
     githubUrl: "https://github.com/iluna007/I-U",
   },
+  {
+    id: 10,
+    title: "Memorias vivas",
+    description:
+      "Under Construction",
+    image: "/investigacionurgent.jpg",
+    tags: ["HTML", "Tailwind CSS", "JavaScript","React","Vite","Bootstrap","Netlify"],
+    demoUrl: "https://memoriasvivastest.netlify.app/",
+    githubUrl: "https://github.com/iluna007/memoriasvivas",
+  },
 ];
 
 export const ProjectsSection = () => {
