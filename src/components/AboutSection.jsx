@@ -1,6 +1,7 @@
 import { Briefcase, Code, User } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { PixelGridImage } from "./AboutSection/PixelGridImage";
 
 export const AboutSection = () => {
   const sectionRef = useRef(null);
@@ -35,13 +36,13 @@ export const AboutSection = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            {/* Imagen (reinsertada) */}
-            <motion.img
-              src="/iker-luna.jpeg"
-              alt="Iker Luna"
-              style={{ y: imageY }}
-              className="w-full max-w-sm mx-auto rounded-lg object-cover"
-            />
+            {/* Imagen: grilla de píxeles que tapa la foto; al hover se revela la foto */}
+            <motion.div style={{ y: imageY }} className="w-full max-w-sm mx-auto">
+              <PixelGridImage
+                src="/iker-luna.jpeg"
+                alt="Iker Luna"
+              />
+            </motion.div>
 
 
             <p className="text-muted-foreground">

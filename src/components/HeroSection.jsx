@@ -24,7 +24,7 @@ export const HeroSection = () => {
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             I create web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
+            Specializing in spatial front-end development, I build experimental interfaces that are
             both beautiful and functional.
           </p>
 

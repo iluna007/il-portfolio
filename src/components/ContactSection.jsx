@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import HeroSpiderCursor from "./Hero/HeroSpiderCursor";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -54,8 +55,12 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
+    <section
+      id="contact"
+      className="py-24 px-4 relative bg-secondary/30 overflow-hidden cursor-none"
+    >
+      <HeroSpiderCursor sectionId="contact" />
+      <div className="container mx-auto max-w-5xl relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Get In <span className="text-primary"> Touch</span>
         </h2>

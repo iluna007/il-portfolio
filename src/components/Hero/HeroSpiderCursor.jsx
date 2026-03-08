@@ -102,14 +102,14 @@ function createSpider(width, height) {
   };
 }
 
-export default function HeroSpiderCursor() {
+export default function HeroSpiderCursor({ sectionId = "hero" }) {
   const canvasRef = useRef(null);
   const spidersRef = useRef([]);
   const rafRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const section = document.getElementById("hero");
+    const section = document.getElementById(sectionId);
     if (!canvas || !section) return;
 
     const ctx = canvas.getContext("2d");
