@@ -1,7 +1,8 @@
 import { cn } from "../lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { ThemeToggle } from "./ThemeToggle";
+import ThemeToggle from "./ThemeToggle";
+import BackgroundColorPicker from "./BackgroundColorPicker";
 
 const navItems = [
   { name: "Home", id: "hero" },
@@ -11,7 +12,12 @@ const navItems = [
   { name: "Contact", id: "contact" },
 ];
 
-export const Navbar = () => {
+export const Navbar = ({
+  theme,
+  onToggleTheme,
+  bgColor,
+  onBgColorChange,
+}) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -45,33 +51,42 @@ export const Navbar = () => {
         {/* Logo */}
         <button
           onClick={() => scrollToSection("hero")}
-          className="text-xl font-bold text-primary flex items-center"
+          className="text-xl font-bold text-foreground flex items-center"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground">Iker Luna</span>{" "}
-            Portfolio
+            Iker Luna Portfolio
           </span>
         </button>
 
-        {/* Desktop nav + theme toggle */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Desktop nav + theme + bg color */}
+        <div className="hidden md:flex items-center gap-4">
           <div className="flex space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-foreground/80 hover:text-foreground transition-colors duration-300"
               >
                 {item.name}
               </button>
             ))}
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-1">
+            <BackgroundColorPicker
+              currentColor={bgColor}
+              onColorChange={onBgColorChange}
+            />
+            <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+          </div>
         </div>
 
-        {/* Mobile: theme toggle + menu button */}
+        {/* Mobile: bg color + theme + menu button */}
         <div className="flex md:hidden items-center gap-1">
-          <ThemeToggle />
+          <BackgroundColorPicker
+            currentColor={bgColor}
+            onColorChange={onBgColorChange}
+          />
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           <button
             onClick={() => setIsMenuOpen((prev) => !prev)}
             className="p-2 text-foreground z-50"
@@ -96,7 +111,7 @@ export const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-foreground/80 hover:text-foreground transition-colors duration-300"
               >
                 {item.name}
               </button>

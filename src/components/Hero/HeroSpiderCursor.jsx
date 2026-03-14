@@ -150,14 +150,14 @@ export default function HeroSpiderCursor({ sectionId = "hero" }) {
     });
     ro.observe(section);
 
-    // Use CSS variables for theme-aware colors
+    // Monochromatic: use foreground for theme-aware spiders
     const getStyles = () => {
       const style = getComputedStyle(document.documentElement);
-      const primary = style.getPropertyValue("--primary").trim() || "24 100% 50%";
-      const hsl = primary.replace(/\s+/g, ", ");
+      const fg = style.getPropertyValue("--foreground").trim() || "222 47% 11%";
+      const hsl = fg.replace(/\s+/g, ", ");
       return {
-        stroke: `hsla(${hsl}, 0.35)`,
-        fill: `hsla(${hsl}, 0.25)`,
+        stroke: `hsla(${hsl}, 0.4)`,
+        fill: `hsla(${hsl}, 0.2)`,
       };
     };
 

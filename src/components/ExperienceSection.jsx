@@ -36,13 +36,13 @@ export const ExperienceSection = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold mb-20 text-center"
         >
-          Professional <span className="text-primary">Experience</span>
+          Professional <span className="text-foreground">Experience</span>
         </motion.h2>
 
         {/* Timeline */}
         <div className="relative">
           {/* Línea central */}
-          <div className="absolute left-1/2 top-0 h-full w-px bg-primary/30 hidden md:block" />
+          <div className="absolute left-1/2 top-0 h-full w-px bg-foreground/30 hidden md:block" />
 
           <div className="space-y-20">
             {experiences.map((exp, i) => {
@@ -84,7 +84,7 @@ export const ExperienceSection = () => {
                   </div>
 
                   {/* Punto central */}
-                  <span className="absolute left-1/2 top-2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary hidden md:block" />
+                  <span className="absolute left-1/2 top-2 -translate-x-1/2 w-4 h-4 rounded-full bg-foreground hidden md:block" />
 
                   {/* Columna derecha */}
                   <div

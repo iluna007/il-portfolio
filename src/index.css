@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* The Ultimate Oldschool PC Font Pack (v2.2) by VileR – https://int10h.org/
+   WebPlus IBM VGA 8x16 – extended charset for Latin/accents. CC BY-SA 4.0 */
+@font-face {
+  font-family: "IBM VGA 8x16";
+  src: url("/fonts/oldschool_pc_font_pack_v2.2_web/oldfonts/WebPlus_IBM_VGA_8x16.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
@@ -9,6 +19,8 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
 
   --color-card: hsl(var(--card));
+
+  --font-sans: "IBM VGA 8x16", ui-monospace, monospace;
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -97,7 +109,10 @@
 
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: "IBM VGA 8x16", ui-monospace, monospace;
+    /* Native pixel height for crisp rendering (8x16 font) */
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
@@ -124,7 +139,7 @@
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 10px rgba(255, 102, 1, 0.5);
+  text-shadow: 0 0 12px hsl(var(--foreground) / 0.3);
 }
 
 @utility card-hover {
@@ -139,9 +154,8 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,102,1,0.5)]
-         hover:scale-105 active:scale-95;
+  @apply px-6 py-2 rounded-full bg-foreground text-background font-medium 
+         transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95;
 }
 
 @utility star {
@@ -159,4 +173,170 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+}
+
+/* Theme toggle – CP437 icons */
+.theme-toggle {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s, color 0.2s;
+  color: hsl(var(--foreground));
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.theme-toggle:hover {
+  background: hsl(var(--secondary) / 0.5);
+}
+.theme-toggle:focus {
+  outline: none;
+}
+.theme-toggle:focus-visible {
+  box-shadow: 0 0 0 2px hsl(var(--foreground));
+}
+.theme-icon {
+  display: inline-block;
+  font-family: "IBM VGA 8x16", ui-monospace, monospace;
+}
+
+/* Background color picker */
+.bg-color-picker-wrap {
+  position: relative;
+}
+.bg-color-toggle {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s, color 0.2s;
+  color: hsl(var(--foreground));
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.bg-color-toggle:hover {
+  background: hsl(var(--secondary) / 0.5);
+}
+.bg-color-toggle:focus {
+  outline: none;
+}
+.bg-color-toggle:focus-visible {
+  box-shadow: 0 0 0 2px hsl(var(--foreground));
+}
+.bg-color-icon {
+  display: inline-block;
+  font-family: "IBM VGA 8x16", ui-monospace, monospace;
+}
+
+.bg-color-picker {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  min-width: 220px;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 60;
+}
+.bg-color-retro-header {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: hsl(var(--foreground));
+}
+.bg-color-wheel-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+.bg-color-wheel {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  cursor: crosshair;
+  flex-shrink: 0;
+  border: 2px solid hsl(var(--border));
+}
+.bg-color-lightness-wrap {
+  flex: 1;
+  min-width: 24px;
+}
+.bg-color-lightness-bar {
+  width: 24px;
+  height: 120px;
+  border-radius: 4px;
+  position: relative;
+  cursor: ns-resize;
+  border: 1px solid hsl(var(--border));
+}
+.bg-color-lightness-handle {
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  height: 8px;
+  background: hsl(var(--foreground));
+  border-radius: 2px;
+  pointer-events: none;
+}
+.bg-color-hex-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.bg-color-hex-label {
+  font-size: 0.875rem;
+  color: hsl(var(--foreground) / 0.8);
+}
+.bg-color-hex-input {
+  flex: 1;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  font-family: "IBM VGA 8x16", ui-monospace, monospace;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.25rem;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+.bg-color-retro-preview {
+  height: 28px;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid hsl(var(--border));
+}
+.bg-color-retro-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.bg-color-default,
+.bg-color-apply {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-family: "IBM VGA 8x16", ui-monospace, monospace;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.bg-color-default {
+  background: transparent;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+.bg-color-default:hover {
+  background: hsl(var(--secondary) / 0.5);
+}
+.bg-color-apply {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border: none;
+}
+.bg-color-apply:hover {
+  opacity: 0.9;
 }

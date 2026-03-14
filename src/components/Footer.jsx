@@ -16,7 +16,7 @@ export const Footer = () => {
 
       <button
         onClick={scrollToTop}
-        className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+        className="p-2 rounded-full bg-foreground/10 hover:bg-foreground/20 text-foreground transition-colors"
         aria-label="Scroll to top"
       >
         <ArrowUp size={20} />

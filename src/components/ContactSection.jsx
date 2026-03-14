@@ -62,7 +62,7 @@ export const ContactSection = () => {
       <HeroSpiderCursor sectionId="contact" />
       <div className="container mx-auto max-w-5xl relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Get In <span className="text-foreground"> Touch</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -79,14 +79,14 @@ export const ContactSection = () => {
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-full bg-foreground/10">
+                  <Mail className="h-6 w-6 text-foreground" />
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:arquitectoikerluna@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     arquitectoikerluna@gmail.com
                   </a>
@@ -94,14 +94,14 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-full bg-foreground/10">
+                  <Phone className="h-6 w-6 text-foreground" />
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a
                     href="tel:+50663613101"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     +506 6361 3101
                   </a>
@@ -109,8 +109,8 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-full bg-foreground/10">
+                  <MapPin className="h-6 w-6 text-foreground" />
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
@@ -158,7 +158,7 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-foreground"
                   placeholder="Your name"
                 />
               </div>
@@ -172,7 +172,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-foreground"
                   placeholder="you@example.com"
                 />
               </div>
@@ -189,7 +189,7 @@ export const ContactSection = () => {
                   name="message"
                   required
                   rows={4}
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-foreground resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>

@@ -23,7 +23,7 @@ export const AboutSection = () => {
     >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
+          About <span className="text-foreground"> Me</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -52,7 +52,7 @@ export const AboutSection = () => {
                 href="https://iaac.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-primary"
+                className="underline hover:text-foreground"
               >
                 IAAC
               </a>
@@ -63,7 +63,7 @@ export const AboutSection = () => {
                 href="https://research-architecture.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-primary"
+                className="underline hover:text-foreground"
               >
                 Centre for Research Architecture
               </a>{" "}
@@ -72,7 +72,7 @@ export const AboutSection = () => {
                 href="https://forensic-architecture.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-primary"
+                className="underline hover:text-foreground"
               >
                 Forensic Architecture
               </a>
@@ -90,7 +90,7 @@ export const AboutSection = () => {
                 href="https://arquis.ucr.ac.cr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-primary"
+                className="underline hover:text-foreground"
               >
                 School of Architecture, University of Costa Rica
               </a>
@@ -113,7 +113,7 @@ export const AboutSection = () => {
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                className="px-6 py-2 rounded-full border border-foreground text-foreground hover:bg-foreground/10 transition-colors duration-300"
               >
                 Download CV
               </a>
@@ -131,8 +131,8 @@ export const AboutSection = () => {
           >
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-full bg-foreground/10">
+                  <Code className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
@@ -148,8 +148,8 @@ export const AboutSection = () => {
 
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-full bg-foreground/10">
+                  <User className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
@@ -165,8 +165,8 @@ export const AboutSection = () => {
 
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-full bg-foreground/10">
+                  <Briefcase className="h-6 w-6 text-foreground" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
