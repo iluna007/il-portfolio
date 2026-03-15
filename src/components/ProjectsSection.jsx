@@ -156,6 +156,19 @@ const projects = [
     date: "2026",
     category: "Research / Archive",
     status: "Under Construction",
+  },
+  {
+    id: 13,
+    title: "Spinoza - Ética demostrada según el orden geométrico",
+    description:
+      "Under Construction",
+    image: "/spi00.jpg",
+    tags: ["HTML", "Tailwind CSS", "JavaScript","React","Vite","Bootstrap","Netlify"],
+    demoUrl: "https://spinoza00.netlify.app/",
+    githubUrl: "https://github.com/iluna007/spi00",
+    date: "2026",
+    category: "Research / Archive",
+    status: "Under Construction",
   }
 ];
 
